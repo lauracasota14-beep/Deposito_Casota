@@ -3,7 +3,7 @@ public class Cioccolatino extends Cioccolato{
     private String forma;
     private String ripieno;
 
-    private static final int consumoCacao = 10;
+    private static final int consumoCacao = 2;
 
     public Cioccolatino(String tipo, double percentualeCacao, String forma, String ripieno){
 
