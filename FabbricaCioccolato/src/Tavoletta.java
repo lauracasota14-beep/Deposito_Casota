@@ -5,6 +5,7 @@ public class Tavoletta extends Cioccolato{
     public Tavoletta(String tipo, double percentualeCacao, int peso, String aggiunte) {
         super(tipo, percentualeCacao);
 
+        //accetto il peso solo se compreso tra i nm
         if(peso >= 4 && peso <= 24){
             this.peso = peso;
         }else {
@@ -23,6 +24,7 @@ public class Tavoletta extends Cioccolato{
         System.out.println("Consumo " + getConsumoCacao());
     }
 
+    //qui consider i l consumo uguale al peso
     public int getConsumoCacao(){
         return peso;
     }
