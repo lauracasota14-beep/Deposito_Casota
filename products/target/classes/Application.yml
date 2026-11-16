@@ -1,0 +1,20 @@
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: products
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/products?useSSL=false&serverTimezone=Europe/Rome&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
